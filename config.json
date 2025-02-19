@@ -31,3 +31,27 @@
   },
   "update_interval": 600
 }
+
+from telegram import Bot
+
+# Load Configuration
+with open("config.json", "r") as f:
+    CONFIG = json.load(f)
+
+TG_BOT_TOKEN = CONFIG["telegram"]["7647870499:AAHzJDGSLHQNBPZYN0anD7UT3fz6XLTm3ZE"]
+TG_CHAT_ID = CONFIG["telegram"]["6078534736"]
+
+# Initialize Telegram Bot
+tg_bot = Bot(token=TG_BOT_TOKEN)
+
+def send_test_message():
+    """Send a test message to verify Telegram bot connection."""
+    try:
+        tg_bot.send_message(chat_id=TG_CHAT_ID, text="🚀 Test message: Your bot is successfully connected to Telegram!")
+        print("✅ Test message sent successfully!")
+    except Exception as e:
+        print(f"❌ Error sending message: {e}")
+
+if __name__ == "__main__":
+    send_test_message()
+
