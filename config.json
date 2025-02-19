@@ -26,8 +26,8 @@
     "stop_loss_percentage": 20
   },
   "telegram": {
-    "bot_token": "your_telegram_bot_token",
-    "chat_id": "your_telegram_chat_id"
+    "bot_token": "7647870499:AAHzJDGSLHQNBPZYN0anD7UT3fz6XLTm3ZE",
+    "chat_id": "6078534736"
   },
   "update_interval": 600
 }
