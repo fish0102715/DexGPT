@@ -62,3 +62,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def test_trade():
+    token_address = input("Enter token address to test buy order: ")
+    trade_response = trade_token({"pairAddress": token_address}, "buy")
+    print("Trade Response:", trade_response)
+
+if __name__ == "__main__":
+    test_trade()
