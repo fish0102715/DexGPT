@@ -1,0 +1,33 @@
+{
+  "filters": {
+    "min_liquidity": 5000,
+    "min_volume": 10000,
+    "pump_threshold": 100,
+    "dump_threshold": -50,
+    "bundled_supply_threshold": 10
+  },
+  "blacklist": {
+    "coins": ["SCAMCOIN", "RUGTOKEN"],
+    "dev_wallets": ["0x123abc...", "0xdeadbeef..."]
+  },
+  "fake_volume": {
+    "use_pocket_universe": true,
+    "pocket_universe_api_key": "your_api_key"
+  },
+  "rugcheck": {
+    "use_rugcheck": true,
+    "rugcheck_api_key": "your_rugcheck_api_key"
+  },
+  "trading": {
+    "use_bonkbot": true,
+    "telegram_bonkbot_token": "your_bonkbot_api_key",
+    "max_trade_amount": 1000,
+    "take_profit_percentage": 50,
+    "stop_loss_percentage": 20
+  },
+  "telegram": {
+    "bot_token": "your_telegram_bot_token",
+    "chat_id": "your_telegram_chat_id"
+  },
+  "update_interval": 600
+}
